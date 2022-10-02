@@ -1,0 +1,39 @@
+
+  <%- include("header"); -%>
+
+  <div class="box" id="heading">
+    <h1><%= listTitle %></h1>
+  </div>
+
+  <div class="box">
+  
+    <% for(let item of addedItem){ %>
+      <form action="/delete" method="post">
+        <div class="item">
+          <input type="checkbox" id="checkbox" name="checkbox">
+          <p>
+            <%= item.name %>
+          </p>
+          <div class="deleteIconBox">
+            <button type="submit" class="deletebuttonIcon" name="deleteItem" value="<%= item._id %>"><i
+                class="fa fa-trash fa-2s" aria-hidden="true"></i></button>
+          </div>
+        </div>
+        <input type="hidden" name="listName" value="<%= listTitle %>">
+      </form>
+      <% } %>
+  
+        <form class="item" action="/" method="post">
+          <input type="text" name="userInput" placeholder="Put your item here..." autofocus="autofocus"
+            autocomplete="off">
+          <button type="submit" id="addListItemButton" name="list" value="<%= listTitle %>">+</button>
+        </form>
+  
+  </div>
+
+
+  <%- include("footer"); -%>
+
+  
+
+

@@ -1,0 +1,142 @@
+
+.inputForm {
+  display: flex;
+  justify-content: left;
+  margin-top: 50px;
+}
+h1 {
+  color: white;
+  padding: 10px;
+}
+
+body {
+  background-color: #E4E9FD;
+  background: linear-gradient(65deg, #a683e3 50%, #e4e9fd 50%);
+  height: 1000px;
+}
+
+.box {
+  position: relative;
+  overflow:hidden;
+  max-width: 450px;
+  background-color: white;
+  border-radius: 5px;
+  margin: 50px auto;
+  box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+}
+
+#heading {
+  background-color: #a683e3;
+  text-align: center;
+}
+
+.item {
+  min-height: 70px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #f1f1f1;
+}
+
+.item:last-child {
+  border-bottom: 0;
+}
+
+input[type="checkbox"] {
+  margin: 20px;
+}
+
+input:checked + p {
+  text-decoration: line-through;
+  text-decoration-color: #a683e3;
+}
+
+p {
+  margin: 0%;
+  padding: 20px;
+  font-size: 20px;
+  font-weight: 500;
+  color: #00204a;
+  word-wrap: break-word;
+}
+
+form.item {
+  margin-left: 20px;
+}
+
+input[type="text"]{
+    height: 60px;
+    width: 313px;
+    text-align: center;
+    border: none;
+    font-size: 20px;
+  font-weight: 200;
+  background: transparent;
+
+}
+
+input[type="text"]:focus{
+    outline: none;
+    box-shadow: inset  0 -3px 0 0  #A683E3;
+}
+
+
+button#addListItemButton {
+  height: 50px;
+  width: 50px;
+  background-color: #a683e3;
+  border-radius: 50%;
+  border-color: transparent;
+  color: #fff;
+  font-size: 30px;
+  padding-bottom: 6px;
+  border-width: 0;
+  margin-left: 13%;
+  
+}
+
+::placeholder {
+  color: grey;
+  opacity: 1;
+}
+
+.deleteIconBox{
+  position: absolute;
+  background-color: transparent;
+  margin-left:5%;
+  left: 87%;
+  
+
+
+}
+
+
+.deletebuttonIcon{
+  
+  color: #00204a;
+ padding: 10%;
+ border: none;
+ width: 30px;
+ background-color: transparent;
+
+}
+
+.deletebuttonIcon:hover{
+ animation-name: example;
+ animation-duration: 1s;
+}
+
+@keyframes example {
+  from {border: 2px solid grey;
+    border-radius: 0;
+     ;
+  }
+  to {border: 2px solid gray;
+    border-radius: 10px;
+  }
+}
+
+footer {
+  color: white;
+  color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
