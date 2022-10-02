@@ -1,12 +1,13 @@
-
-  <%- include("header"); -%>
+<%- include("header"); -%>
 
   <div class="box" id="heading">
-    <h1><%= listTitle %></h1>
+    <h1>
+      <%= listTitle %>
+    </h1>
   </div>
 
   <div class="box">
-  
+
     <% for(let item of addedItem){ %>
       <form action="/delete" method="post">
         <div class="item">
@@ -22,18 +23,14 @@
         <input type="hidden" name="listName" value="<%= listTitle %>">
       </form>
       <% } %>
-  
+
         <form class="item" action="/" method="post">
           <input type="text" name="userInput" placeholder="Put your item here..." autofocus="autofocus"
             autocomplete="off">
           <button type="submit" id="addListItemButton" name="list" value="<%= listTitle %>">+</button>
         </form>
-  
+
   </div>
 
 
   <%- include("footer"); -%>
-
-  
-
-
