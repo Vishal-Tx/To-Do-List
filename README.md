@@ -5,7 +5,7 @@
 ### You can add many items into the list and delete them after completing them. 
 
 ## Technology used:-
- ### Javascript
- ### Express
- ### MongoDB
- ### lodash
+ ### 1. Javascript
+ ### 2. Express
+ ### 3. MongoDB
+ ### 4. lodash
